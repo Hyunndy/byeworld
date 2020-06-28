@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE3D79CF24A883F000653B0E /* 커밋1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CE3D79CD24A883F000653B0E /* 커밋1.jpeg */; };
+		CE3D79D024A883F000653B0E /* 커밋2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CE3D79CE24A883F000653B0E /* 커밋2.jpeg */; };
 		CE9F2AA324A736190017B76D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F2AA224A736190017B76D /* AppDelegate.swift */; };
 		CE9F2AA524A736190017B76D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F2AA424A736190017B76D /* SceneDelegate.swift */; };
 		CE9F2AA724A736190017B76D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F2AA624A736190017B76D /* ViewController.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE3D79CD24A883F000653B0E /* 커밋1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "커밋1.jpeg"; sourceTree = "<group>"; };
+		CE3D79CE24A883F000653B0E /* 커밋2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "커밋2.jpeg"; sourceTree = "<group>"; };
 		CE9F2A9F24A736190017B76D /* byeworld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = byeworld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9F2AA224A736190017B76D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE9F2AA424A736190017B76D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +103,8 @@
 		CE9F2AA124A736190017B76D /* byeworld */ = {
 			isa = PBXGroup;
 			children = (
+				CE3D79CD24A883F000653B0E /* 커밋1.jpeg */,
+				CE3D79CE24A883F000653B0E /* 커밋2.jpeg */,
 				CE9F2AA224A736190017B76D /* AppDelegate.swift */,
 				CE9F2AA424A736190017B76D /* SceneDelegate.swift */,
 				CE9F2AA624A736190017B76D /* ViewController.swift */,
@@ -233,6 +239,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE9F2AAF24A736190017B76D /* LaunchScreen.storyboard in Resources */,
+				CE3D79CF24A883F000653B0E /* 커밋1.jpeg in Resources */,
+				CE3D79D024A883F000653B0E /* 커밋2.jpeg in Resources */,
 				CE9F2AAC24A736190017B76D /* Assets.xcassets in Resources */,
 				CE9F2AAA24A736190017B76D /* Main.storyboard in Resources */,
 			);
@@ -436,6 +444,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = byeworld/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,6 +462,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = byeworld/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
