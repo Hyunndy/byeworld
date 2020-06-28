@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     // 타이머가 설정한 간격대로 실행되는지 확인하는 변수
     var count = 0
     
+    var alarmTime: String = "0"
+    
     
     // 현재 시간을 나타내는 라벨
     @IBOutlet var IblCurrentTime: UILabel!
@@ -46,6 +48,9 @@ class ViewController: UIViewController {
         // 년-월-일 시:분:초 요일
         formatter.dateFormat = "yyyy-MM-dd HH:mm EEE"
         IblPickerTime.text = "선택시간 :" + formatter.string(from: sender.date)
+        
+        // 알람 타임
+        alarmTime = formatter.string(from: sender.date)
     }
     
     // 타이머가 구동될 때 구동할 함수.
@@ -62,6 +67,12 @@ class ViewController: UIViewController {
         formattter.dateFormat = "yyyy-MM-dd HH:mm EEE"
         
         IblCurrentTime.text = "현재시간 :" + formattter.string(from: date as Date)
+        
+        if(formattter.string(from: date as Date) == alarmTime) {
+            view.backgroundColor = UIColor.red
+        } else {
+            view.backgroundColor = UIColor.white
+        }
     }
     
     
