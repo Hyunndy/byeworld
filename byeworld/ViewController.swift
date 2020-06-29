@@ -20,4 +20,15 @@ class ViewController: UIViewController, WKNavigationDelegate {
 
     }
 
+    @IBAction func btnToTimePicker(_ sender: UIButton) {
+        
+        tabBarController?.selectedIndex = 1
+        
+    }
+    
+    @IBAction func btnToImage(_ sender: Any) {
+        
+        tabBarController?.selectedIndex = 2
+    }
+    
 }

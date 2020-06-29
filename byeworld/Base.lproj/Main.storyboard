@@ -15,20 +15,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JZg-t3-ynx" userLabel="Safe Area ContainerView">
-                                <rect key="frame" x="20" y="129" width="374" height="661"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ehd-Gc-sps">
+                                <rect key="frame" x="298" y="69" width="75" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="타임피커로"/>
                                 <connections>
-                                    <segue destination="Z8R-Mx-orn" kind="embed" id="Yol-BV-AjQ"/>
+                                    <action selector="btnToTimePicker:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VZp-HN-Kpt"/>
                                 </connections>
-                            </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pRx-BZ-cY8">
-                                <rect key="frame" x="20" y="225" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s6C-sy-8gZ">
+                                <rect key="frame" x="20" y="69" width="78" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="이미지뷰어로"/>
                                 <connections>
-                                    <segue destination="Dqc-dl-Z2N" kind="embed" id="qhd-jg-jVA"/>
+                                    <action selector="btnToImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="shc-yC-gnk"/>
                                 </connections>
-                            </containerView>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -48,6 +50,7 @@
                     <toolbarItems/>
                     <nil key="simulatedTopBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="flW-dd-fuL">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -144,48 +147,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WBB-bg-jWf" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2177" y="130"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Xid-fh-Bc0">
-            <objects>
-                <viewController id="ehe-Bm-wI5" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="dCw-wo-pz6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Cmb-gw-26R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2094" y="-380"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="DOC-Cu-KAt">
-            <objects>
-                <viewController id="Z8R-Mx-orn" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="0vY-zv-nse">
-                        <rect key="frame" x="0.0" y="0.0" width="374" height="661"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XrP-M3-kCc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="800" y="-195"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="M6I-zu-BwQ">
-            <objects>
-                <viewController id="Dqc-dl-Z2N" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="FLI-Cy-Q4L">
-                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wFb-85-cix" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1707" y="-796"/>
         </scene>
     </scenes>
     <resources>
