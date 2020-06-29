@@ -17,6 +17,7 @@
 		CE9F2AAF24A736190017B76D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9F2AAD24A736190017B76D /* LaunchScreen.storyboard */; };
 		CE9F2ABA24A7361A0017B76D /* byeworldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F2AB924A7361A0017B76D /* byeworldTests.swift */; };
 		CE9F2AC524A7361A0017B76D /* byeworldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F2AC424A7361A0017B76D /* byeworldUITests.swift */; };
+		CEB2478524A9B3D100A5DE15 /* 커밋3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEB2478424A9B3D100A5DE15 /* 커밋3.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		CE9F2AC024A7361A0017B76D /* byeworldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = byeworldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9F2AC424A7361A0017B76D /* byeworldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = byeworldUITests.swift; sourceTree = "<group>"; };
 		CE9F2AC624A7361A0017B76D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEB2478424A9B3D100A5DE15 /* 커밋3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "커밋3.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		CE9F2AA124A736190017B76D /* byeworld */ = {
 			isa = PBXGroup;
 			children = (
+				CEB2478424A9B3D100A5DE15 /* 커밋3.jpg */,
 				CE3D79CD24A883F000653B0E /* 커밋1.jpeg */,
 				CE3D79CE24A883F000653B0E /* 커밋2.jpeg */,
 				CE9F2AA224A736190017B76D /* AppDelegate.swift */,
@@ -241,6 +244,7 @@
 				CE9F2AAF24A736190017B76D /* LaunchScreen.storyboard in Resources */,
 				CE3D79CF24A883F000653B0E /* 커밋1.jpeg in Resources */,
 				CE3D79D024A883F000653B0E /* 커밋2.jpeg in Resources */,
+				CEB2478524A9B3D100A5DE15 /* 커밋3.jpg in Resources */,
 				CE9F2AAC24A736190017B76D /* Assets.xcassets in Resources */,
 				CE9F2AAA24A736190017B76D /* Main.storyboard in Resources */,
 			);
