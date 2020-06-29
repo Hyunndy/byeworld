@@ -20,6 +20,11 @@
 		CEB2478524A9B3D100A5DE15 /* 커밋3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEB2478424A9B3D100A5DE15 /* 커밋3.jpg */; };
 		CEB2478824A9D57A00A5DE15 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB2478724A9D57A00A5DE15 /* WebKit.framework */; };
 		CEB2478A24A9DE6100A5DE15 /* htmlView.html in Resources */ = {isa = PBXBuildFile; fileRef = CEB2478924A9DE6100A5DE15 /* htmlView.html */; };
+		CEB2478D24A9F96E00A5DE15 /* lamp_off.png in Resources */ = {isa = PBXBuildFile; fileRef = CEB2478B24A9F96E00A5DE15 /* lamp_off.png */; };
+		CEB2478E24A9F96E00A5DE15 /* lamp_on.png in Resources */ = {isa = PBXBuildFile; fileRef = CEB2478C24A9F96E00A5DE15 /* lamp_on.png */; };
+		CEB2479024A9F9AE00A5DE15 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB2478F24A9F9AD00A5DE15 /* ImageViewController.swift */; };
+		CEB2479224A9FAB000A5DE15 /* customTabBarLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB2479124A9FAB000A5DE15 /* customTabBarLayout.swift */; };
+		CEB2479424A9FBB500A5DE15 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB2479324A9FBB500A5DE15 /* DateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +64,11 @@
 		CEB2478424A9B3D100A5DE15 /* 커밋3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "커밋3.jpg"; sourceTree = "<group>"; };
 		CEB2478724A9D57A00A5DE15 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		CEB2478924A9DE6100A5DE15 /* htmlView.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = htmlView.html; sourceTree = "<group>"; };
+		CEB2478B24A9F96E00A5DE15 /* lamp_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lamp_off.png; sourceTree = "<group>"; };
+		CEB2478C24A9F96E00A5DE15 /* lamp_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lamp_on.png; sourceTree = "<group>"; };
+		CEB2478F24A9F9AD00A5DE15 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		CEB2479124A9FAB000A5DE15 /* customTabBarLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customTabBarLayout.swift; sourceTree = "<group>"; };
+		CEB2479324A9FBB500A5DE15 /* DateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,17 +121,22 @@
 		CE9F2AA124A736190017B76D /* byeworld */ = {
 			isa = PBXGroup;
 			children = (
+				CEB2478B24A9F96E00A5DE15 /* lamp_off.png */,
+				CEB2478C24A9F96E00A5DE15 /* lamp_on.png */,
 				CEB2478424A9B3D100A5DE15 /* 커밋3.jpg */,
 				CE3D79CD24A883F000653B0E /* 커밋1.jpeg */,
+				CEB2479324A9FBB500A5DE15 /* DateViewController.swift */,
 				CE3D79CE24A883F000653B0E /* 커밋2.jpeg */,
 				CE9F2AA224A736190017B76D /* AppDelegate.swift */,
 				CE9F2AA424A736190017B76D /* SceneDelegate.swift */,
 				CE9F2AA624A736190017B76D /* ViewController.swift */,
+				CEB2478F24A9F9AD00A5DE15 /* ImageViewController.swift */,
 				CEB2478924A9DE6100A5DE15 /* htmlView.html */,
 				CE9F2AA824A736190017B76D /* Main.storyboard */,
 				CE9F2AAB24A736190017B76D /* Assets.xcassets */,
 				CE9F2AAD24A736190017B76D /* LaunchScreen.storyboard */,
 				CE9F2AB024A736190017B76D /* Info.plist */,
+				CEB2479124A9FAB000A5DE15 /* customTabBarLayout.swift */,
 			);
 			path = byeworld;
 			sourceTree = "<group>";
@@ -259,7 +274,9 @@
 				CE9F2AAF24A736190017B76D /* LaunchScreen.storyboard in Resources */,
 				CE3D79CF24A883F000653B0E /* 커밋1.jpeg in Resources */,
 				CE3D79D024A883F000653B0E /* 커밋2.jpeg in Resources */,
+				CEB2478D24A9F96E00A5DE15 /* lamp_off.png in Resources */,
 				CEB2478524A9B3D100A5DE15 /* 커밋3.jpg in Resources */,
+				CEB2478E24A9F96E00A5DE15 /* lamp_on.png in Resources */,
 				CE9F2AAC24A736190017B76D /* Assets.xcassets in Resources */,
 				CEB2478A24A9DE6100A5DE15 /* htmlView.html in Resources */,
 				CE9F2AAA24A736190017B76D /* Main.storyboard in Resources */,
@@ -289,7 +306,10 @@
 			files = (
 				CE9F2AA724A736190017B76D /* ViewController.swift in Sources */,
 				CE9F2AA324A736190017B76D /* AppDelegate.swift in Sources */,
+				CEB2479024A9F9AE00A5DE15 /* ImageViewController.swift in Sources */,
 				CE9F2AA524A736190017B76D /* SceneDelegate.swift in Sources */,
+				CEB2479424A9FBB500A5DE15 /* DateViewController.swift in Sources */,
+				CEB2479224A9FAB000A5DE15 /* customTabBarLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
