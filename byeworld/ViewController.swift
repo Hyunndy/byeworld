@@ -17,6 +17,9 @@ class ViewController: UIViewController {
     // 타이머가 설정한 간격대로 실행되는지 확인하는 변수
     var count = 0
     
+    // alert를 확인했는지 안했는지
+    var isCheckAlert = false
+    
     var alarmTime: String = "0"
     
     
@@ -50,6 +53,7 @@ class ViewController: UIViewController {
         IblPickerTime.text = "선택시간 :" + formatter.string(from: sender.date)
         
         // 알람 타임
+        formatter.dateFormat = "hh:mm aaa"
         alarmTime = formatter.string(from: sender.date)
     }
     
@@ -68,10 +72,26 @@ class ViewController: UIViewController {
         
         IblCurrentTime.text = "현재시간 :" + formattter.string(from: date as Date)
         
-        if(formattter.string(from: date as Date) == alarmTime) {
-            view.backgroundColor = UIColor.red
+        
+        // 현재 시간
+        formattter.dateFormat = "hh:mm aaa"
+        let currentTime = formattter.string(from: date as Date)
+        // 데이트 피커에서 선택한 시간과 알람에서 설정한 시간과 같을 경우
+        if(currentTime == alarmTime) {
+            //view.backgroundColor = UIColor.red
+            if(!isCheckAlert) {
+                
+                let alarmAlert = UIAlertController(title: "알림", message: "설정된 시간입니다!!", preferredStyle: UIAlertController.Style.alert)
+                let alarmAction = UIAlertAction(title: "네, 알겠습니다", style: UIAlertAction.Style.default, handler: { ACTION -> () in
+                    self.isCheckAlert = true
+                })
+                
+                alarmAlert.addAction(alarmAction)
+                present(alarmAlert, animated: true, completion: nil)
+            }
+            
         } else {
-            view.backgroundColor = UIColor.white
+            isCheckAlert = false
         }
     }
     
