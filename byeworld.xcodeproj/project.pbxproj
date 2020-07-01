@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE31D7E924AC49AD004F4F98 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31D7E824AC49AD004F4F98 /* EditViewController.swift */; };
+		CE31D7EB24AC6B56004F4F98 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31D7EA24AC6B56004F4F98 /* TableViewController.swift */; };
+		CE31D7ED24AC6B85004F4F98 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31D7EC24AC6B85004F4F98 /* AddViewController.swift */; };
+		CE31D7EF24AC6B9C004F4F98 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31D7EE24AC6B9C004F4F98 /* DetailViewController.swift */; };
+		CE31D7F424AC7DA7004F4F98 /* 루피.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE31D7F324AC7DA7004F4F98 /* 루피.jpg */; };
 		CE3D79CF24A883F000653B0E /* 커밋1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CE3D79CD24A883F000653B0E /* 커밋1.jpeg */; };
 		CE3D79D024A883F000653B0E /* 커밋2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CE3D79CE24A883F000653B0E /* 커밋2.jpeg */; };
 		CE9F2AA324A736190017B76D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F2AA224A736190017B76D /* AppDelegate.swift */; };
 		CE9F2AA524A736190017B76D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F2AA424A736190017B76D /* SceneDelegate.swift */; };
-		CE9F2AA724A736190017B76D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F2AA624A736190017B76D /* ViewController.swift */; };
 		CE9F2AAA24A736190017B76D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9F2AA824A736190017B76D /* Main.storyboard */; };
 		CE9F2AAC24A736190017B76D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9F2AAB24A736190017B76D /* Assets.xcassets */; };
 		CE9F2AAF24A736190017B76D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9F2AAD24A736190017B76D /* LaunchScreen.storyboard */; };
@@ -43,13 +45,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CE31D7E824AC49AD004F4F98 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		CE31D7EA24AC6B56004F4F98 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		CE31D7EC24AC6B85004F4F98 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		CE31D7EE24AC6B9C004F4F98 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CE31D7F324AC7DA7004F4F98 /* 루피.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "루피.jpg"; sourceTree = "<group>"; };
+		CE31D7F524AC7E08004F4F98 /* 루피.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "루피.jpg"; path = "../byeworld.xcodeproj/루피.jpg"; sourceTree = "<group>"; };
 		CE3D79CD24A883F000653B0E /* 커밋1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "커밋1.jpeg"; sourceTree = "<group>"; };
 		CE3D79CE24A883F000653B0E /* 커밋2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "커밋2.jpeg"; sourceTree = "<group>"; };
 		CE9F2A9F24A736190017B76D /* byeworld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = byeworld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9F2AA224A736190017B76D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE9F2AA424A736190017B76D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE9F2AA624A736190017B76D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE9F2AA924A736190017B76D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE9F2AAB24A736190017B76D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE9F2AAE24A736190017B76D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -117,20 +122,23 @@
 		CE9F2AA124A736190017B76D /* byeworld */ = {
 			isa = PBXGroup;
 			children = (
+				CE31D7F524AC7E08004F4F98 /* 루피.jpg */,
 				CEB2478B24A9F96E00A5DE15 /* lamp_off.png */,
+				CE31D7F324AC7DA7004F4F98 /* 루피.jpg */,
 				CEB2478C24A9F96E00A5DE15 /* lamp_on.png */,
 				CEB2478424A9B3D100A5DE15 /* 커밋3.jpg */,
 				CE3D79CD24A883F000653B0E /* 커밋1.jpeg */,
 				CE3D79CE24A883F000653B0E /* 커밋2.jpeg */,
 				CE9F2AA224A736190017B76D /* AppDelegate.swift */,
 				CE9F2AA424A736190017B76D /* SceneDelegate.swift */,
-				CE9F2AA624A736190017B76D /* ViewController.swift */,
 				CEB2478924A9DE6100A5DE15 /* htmlView.html */,
 				CE9F2AA824A736190017B76D /* Main.storyboard */,
-				CE31D7E824AC49AD004F4F98 /* EditViewController.swift */,
 				CE9F2AAB24A736190017B76D /* Assets.xcassets */,
 				CE9F2AAD24A736190017B76D /* LaunchScreen.storyboard */,
 				CE9F2AB024A736190017B76D /* Info.plist */,
+				CE31D7EA24AC6B56004F4F98 /* TableViewController.swift */,
+				CE31D7EC24AC6B85004F4F98 /* AddViewController.swift */,
+				CE31D7EE24AC6B9C004F4F98 /* DetailViewController.swift */,
 			);
 			path = byeworld;
 			sourceTree = "<group>";
@@ -267,6 +275,7 @@
 			files = (
 				CE9F2AAF24A736190017B76D /* LaunchScreen.storyboard in Resources */,
 				CE3D79CF24A883F000653B0E /* 커밋1.jpeg in Resources */,
+				CE31D7F424AC7DA7004F4F98 /* 루피.jpg in Resources */,
 				CE3D79D024A883F000653B0E /* 커밋2.jpeg in Resources */,
 				CEB2478D24A9F96E00A5DE15 /* lamp_off.png in Resources */,
 				CEB2478524A9B3D100A5DE15 /* 커밋3.jpg in Resources */,
@@ -298,9 +307,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE31D7E924AC49AD004F4F98 /* EditViewController.swift in Sources */,
-				CE9F2AA724A736190017B76D /* ViewController.swift in Sources */,
 				CE9F2AA324A736190017B76D /* AppDelegate.swift in Sources */,
+				CE31D7EB24AC6B56004F4F98 /* TableViewController.swift in Sources */,
+				CE31D7EF24AC6B9C004F4F98 /* DetailViewController.swift in Sources */,
+				CE31D7ED24AC6B85004F4F98 /* AddViewController.swift in Sources */,
 				CE9F2AA524A736190017B76D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
