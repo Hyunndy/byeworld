@@ -14,6 +14,7 @@ class AddViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDat
     @IBOutlet var pickerView: UIPickerView!
     @IBOutlet var imgView: UIImageView!
     
+    var picekrImgName = ["커밋1.jpeg", "커밋2.jpeg", "커밋3.jpg"]
     var imageArray = [UIImage?]()
     var pickedImg: Int?
     
@@ -23,9 +24,9 @@ class AddViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDat
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        for i in 0..<itemsImageFile.count {
+        for i in 0..<picekrImgName.count {
             
-            let image = UIImage(named: itemsImageFile[i])
+            let image = UIImage(named: picekrImgName[i])
             imageArray.append(image)
         }
         
