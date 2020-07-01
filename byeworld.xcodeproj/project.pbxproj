@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE31D7EB24AC6B56004F4F98 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31D7EA24AC6B56004F4F98 /* TableViewController.swift */; };
-		CE31D7ED24AC6B85004F4F98 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31D7EC24AC6B85004F4F98 /* AddViewController.swift */; };
-		CE31D7EF24AC6B9C004F4F98 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31D7EE24AC6B9C004F4F98 /* DetailViewController.swift */; };
 		CE31D7F424AC7DA7004F4F98 /* 루피.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE31D7F324AC7DA7004F4F98 /* 루피.jpg */; };
+		CE31D7F824ACD3BA004F4F98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31D7F724ACD3BA004F4F98 /* ViewController.swift */; };
 		CE3D79CF24A883F000653B0E /* 커밋1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CE3D79CD24A883F000653B0E /* 커밋1.jpeg */; };
 		CE3D79D024A883F000653B0E /* 커밋2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CE3D79CE24A883F000653B0E /* 커밋2.jpeg */; };
 		CE9F2AA324A736190017B76D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F2AA224A736190017B76D /* AppDelegate.swift */; };
@@ -45,13 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CE31D7EA24AC6B56004F4F98 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		CE31D7EC24AC6B85004F4F98 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
-		CE31D7EE24AC6B9C004F4F98 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		CE31D7F324AC7DA7004F4F98 /* 루피.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "루피.jpg"; sourceTree = "<group>"; };
-		CE31D7F524AC7E08004F4F98 /* 루피.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "루피.jpg"; path = "../byeworld.xcodeproj/루피.jpg"; sourceTree = "<group>"; };
-		CE3D79CD24A883F000653B0E /* 커밋1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "커밋1.jpeg"; sourceTree = "<group>"; };
-		CE3D79CE24A883F000653B0E /* 커밋2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "커밋2.jpeg"; sourceTree = "<group>"; };
+		CE31D7F324AC7DA7004F4F98 /* 루피.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "루피.jpg"; path = "../루피.jpg"; sourceTree = "<group>"; };
+		CE31D7F724ACD3BA004F4F98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE3D79CD24A883F000653B0E /* 커밋1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "커밋1.jpeg"; path = "../커밋1.jpeg"; sourceTree = "<group>"; };
+		CE3D79CE24A883F000653B0E /* 커밋2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "커밋2.jpeg"; path = "../커밋2.jpeg"; sourceTree = "<group>"; };
 		CE9F2A9F24A736190017B76D /* byeworld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = byeworld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9F2AA224A736190017B76D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE9F2AA424A736190017B76D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,7 +60,7 @@
 		CE9F2AC024A7361A0017B76D /* byeworldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = byeworldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9F2AC424A7361A0017B76D /* byeworldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = byeworldUITests.swift; sourceTree = "<group>"; };
 		CE9F2AC624A7361A0017B76D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CEB2478424A9B3D100A5DE15 /* 커밋3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "커밋3.jpg"; sourceTree = "<group>"; };
+		CEB2478424A9B3D100A5DE15 /* 커밋3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "커밋3.jpg"; path = "../커밋3.jpg"; sourceTree = "<group>"; };
 		CEB2478724A9D57A00A5DE15 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		CEB2478924A9DE6100A5DE15 /* htmlView.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = htmlView.html; sourceTree = "<group>"; };
 		CEB2478B24A9F96E00A5DE15 /* lamp_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lamp_off.png; sourceTree = "<group>"; };
@@ -98,6 +93,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE31D7F624ACC3DA004F4F98 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				CE31D7F324AC7DA7004F4F98 /* 루피.jpg */,
+				CE3D79CD24A883F000653B0E /* 커밋1.jpeg */,
+				CE3D79CE24A883F000653B0E /* 커밋2.jpeg */,
+				CEB2478424A9B3D100A5DE15 /* 커밋3.jpg */,
+				CEB2478B24A9F96E00A5DE15 /* lamp_off.png */,
+				CEB2478C24A9F96E00A5DE15 /* lamp_on.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 		CE9F2A9624A736190017B76D = {
 			isa = PBXGroup;
 			children = (
@@ -122,13 +130,7 @@
 		CE9F2AA124A736190017B76D /* byeworld */ = {
 			isa = PBXGroup;
 			children = (
-				CE31D7F524AC7E08004F4F98 /* 루피.jpg */,
-				CEB2478B24A9F96E00A5DE15 /* lamp_off.png */,
-				CE31D7F324AC7DA7004F4F98 /* 루피.jpg */,
-				CEB2478C24A9F96E00A5DE15 /* lamp_on.png */,
-				CEB2478424A9B3D100A5DE15 /* 커밋3.jpg */,
-				CE3D79CD24A883F000653B0E /* 커밋1.jpeg */,
-				CE3D79CE24A883F000653B0E /* 커밋2.jpeg */,
+				CE31D7F624ACC3DA004F4F98 /* Image */,
 				CE9F2AA224A736190017B76D /* AppDelegate.swift */,
 				CE9F2AA424A736190017B76D /* SceneDelegate.swift */,
 				CEB2478924A9DE6100A5DE15 /* htmlView.html */,
@@ -136,9 +138,7 @@
 				CE9F2AAB24A736190017B76D /* Assets.xcassets */,
 				CE9F2AAD24A736190017B76D /* LaunchScreen.storyboard */,
 				CE9F2AB024A736190017B76D /* Info.plist */,
-				CE31D7EA24AC6B56004F4F98 /* TableViewController.swift */,
-				CE31D7EC24AC6B85004F4F98 /* AddViewController.swift */,
-				CE31D7EE24AC6B9C004F4F98 /* DetailViewController.swift */,
+				CE31D7F724ACD3BA004F4F98 /* ViewController.swift */,
 			);
 			path = byeworld;
 			sourceTree = "<group>";
@@ -307,10 +307,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE31D7F824ACD3BA004F4F98 /* ViewController.swift in Sources */,
 				CE9F2AA324A736190017B76D /* AppDelegate.swift in Sources */,
-				CE31D7EB24AC6B56004F4F98 /* TableViewController.swift in Sources */,
-				CE31D7EF24AC6B9C004F4F98 /* DetailViewController.swift in Sources */,
-				CE31D7ED24AC6B85004F4F98 /* AddViewController.swift in Sources */,
 				CE9F2AA524A736190017B76D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
