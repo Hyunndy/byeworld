@@ -10,120 +10,55 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    
-    @IBOutlet var imgOn: UIImageView!
-    @IBOutlet var imgRight: UIImageView!
-    @IBOutlet var imgLeft: UIImageView!
-    @IBOutlet var imgDown: UIImageView!
-    
-    var numOn = 0, numDown = 0, numRight = 0, numLeft = 0
-    
-    // n번의 터치에서만 먹히게 상수 선언
-    let numOfTouches = 2
-    
-    
-    @IBOutlet var numViewOn: UILabel!
+    @IBOutlet var button: UIButton!
+    @IBOutlet var label: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        numViewOn.text = String(numOn)
         
-        // 스와이프 제스처 - 1번 전용
-        // 1. UISwipeGestureRecognizer 클래스 상수 선언
-        // 2. direction 속성에 원하는 방향 설정
-        // 3. 뷰 객체의 addGestureRecogNizer 메서드를 사용해 원하는 방향의 스와이프 제스처를 등록하여 인식
-        let swipeUp = UISwipeGestureRecognizer(target: self, action: #selector(ViewController.respondToSwipeGesture(_ :)))
-        swipeUp.direction = UISwipeGestureRecognizer.Direction.up
-        self.view.addGestureRecognizer(swipeUp)
+        // 코드에서 오토레이아웃을 정의할 때는 명시적으로 false해줘야 한다.
+        // 오토레이아웃을 정의하기 전 뷰를 유연하게 표현할 수 있도록 오토리사이징 마스크를 사용했기 때문에,
+        // 명시적으로 끄지 않으면 오토리사이징마스크의 제약조건과 충돌할 수 있다.
+        button.translatesAutoresizingMaskIntoConstraints = false
         
-        let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(ViewController.respondToSwipeGesture(_ :)))
-        swipeDown.direction = UISwipeGestureRecognizer.Direction.down
-        swipeDown.numberOfTouchesRequired = numOfTouches
-        self.view.addGestureRecognizer(swipeDown)
+        // 제약사항을 코드에서 정할 때 앵커를 이용할 수 있다.
+        var constraintX: NSLayoutConstraint
+        constraintX = button.centerXAnchor.constraint(equalTo: self.view.centerXAnchor)
+        constraintX.isActive = true
         
-        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(ViewController.respondToSwipeGesture(_ :)))
-        swipeLeft.direction = UISwipeGestureRecognizer.Direction.left
-        swipeLeft.numberOfTouchesRequired = numOfTouches
-        self.view.addGestureRecognizer(swipeLeft)
+        var constraintY: NSLayoutConstraint
+        constraintY = button.centerYAnchor.constraint(equalTo: self.view.centerYAnchor)
+        constraintY.isActive = true
         
-        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(ViewController.respondToSwipeGesture(_ :)))
-        swipeRight.direction = UISwipeGestureRecognizer.Direction.right
-        swipeRight.numberOfTouchesRequired = numOfTouches
-        self.view.addGestureRecognizer(swipeRight)
+        // label의 x축을 버튼의 것과 맞춘다.
+        label.translatesAutoresizingMaskIntoConstraints = false
         
-        // 스와이프 제스쳐 - n번 전용
-        let swipeUpMulti = UISwipeGestureRecognizer(target: self, action: #selector(ViewController.respondToSwipeGestureMulti(_:)))
-        swipeUpMulti.direction = UISwipeGestureRecognizer.Direction.up
-        self.view.addGestureRecognizer(swipeUpMulti)
+        /*
+         레이블의 수평 중앙을 버튼의 수평 중앙 앵커를 기준으로 제약을 생성한 후,
+         레이블의 하단 앵커를 버튼의 상단 앵커로부터 10만큼의 거리를 두도록 합니다.
+         (상단 앵커기준으로 위로의 거리는 부호가 - 라는 점을 주목하세요.)
+         */
         
-        let swipeDownMulti = UISwipeGestureRecognizer(target: self, action: #selector(ViewController.respondToSwipeGestureMulti(_:)))
-        swipeDownMulti.direction = UISwipeGestureRecognizer.Direction.down
-        self.view.addGestureRecognizer(swipeDownMulti)
         
-        let swipeLeftMulti = UISwipeGestureRecognizer(target: self, action: #selector(ViewController.respondToSwipeGestureMulti(_:)))
-        swipeLeftMulti.direction = UISwipeGestureRecognizer.Direction.left
-        self.view.addGestureRecognizer(swipeLeftMulti)
+        var buttonConstraintX: NSLayoutConstraint
+        buttonConstraintX = label.centerXAnchor.constraint(equalTo: button.centerXAnchor)
+        buttonConstraintX.isActive = true
         
-        let swipeRightMulti = UISwipeGestureRecognizer(target: self, action: #selector(ViewController.respondToSwipeGestureMulti(_:)))
-        swipeRightMulti.direction = UISwipeGestureRecognizer.Direction.right
-        self.view.addGestureRecognizer(swipeRightMulti)
+        // label을 버튼의 탑 자리에서 -10에 배치한다.
+        var topConstraint: NSLayoutConstraint
+        // label을 버튼 위로
+        topConstraint = label.bottomAnchor.constraint(equalTo: button.topAnchor, constant: -10)
+        // 버튼을 label 위로
+        //topConstraint = label.topAnchor.constraint(equalTo: button.bottomAnchor, constant: 10)
+        topConstraint.isActive = true
         
-    }
-    
-    // 스와이프 제스처 - 1번 사용
-    @objc func respondToSwipeGesture(_ gesture: UIGestureRecognizer) {
+        var widthConstraint: NSLayoutConstraint
+        widthConstraint = label.widthAnchor.constraint(equalTo: button.widthAnchor, multiplier: 2.0)
+        widthConstraint.isActive = true
         
-        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
-            
-            switch swipeGesture.direction {
-            case UISwipeGestureRecognizer.Direction.up:
-                numOn += 1
-                numViewOn.text = String(numOn)
-            case UISwipeGestureRecognizer.Direction.down:
-                numDown += 1
-            case UISwipeGestureRecognizer.Direction.left:
-                numLeft += 1
-            case UISwipeGestureRecognizer.Direction.right:
-                numRight += 1
-            
-            default:
-                break
-            }
-        }
-    }
-    
-    @objc func respondToSwipeGestureMulti(_ gesture: UIGestureRecognizer) {
-        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
-            
-            switch swipeGesture.direction {
-            case UISwipeGestureRecognizer.Direction.up:
-                numOn += 2
-                numViewOn.text = String(numOn)
-            case UISwipeGestureRecognizer.Direction.down:
-                numDown += 1
-            case UISwipeGestureRecognizer.Direction.left:
-                numLeft += 1
-            case UISwipeGestureRecognizer.Direction.right:
-                numRight += 1
-            
-            default:
-                break
-            }
-        }
+        label.backgroundColor = UIColor.brown
+        button.backgroundColor = UIColor.red
         
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
